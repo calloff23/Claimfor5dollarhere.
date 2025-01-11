@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick ASCII Dance</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: monospace;
+      overflow: hidden;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .ascii-art {
+      text-align: center;
+      line-height: 1;
+      animation: rainbow 3s infinite;
+    }
+    @keyframes rainbow {
+      0% { color: red; }
+      20% { color: orange; }
+      40% { color: yellow; }
+      60% { color: green; }
+      80% { color: blue; }
+      100% { color: violet; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ascii-art" id="rick-art">
+    <!-- Insert ASCII art here -->
+  </div>
+
+  <script>
+    const rickArt = `
+       777777777777777777777777777777
+       777777777771111177777777777777
+       777777771111222211117777777777
+       777777111223333322111777777777
+       777771122334455433221117777777
+       777112233445555554433221177777
+       777123334445566654444332117777
+       771233444556776655444432117777
+       771233444556776655444432117777
+       712334455667778766554444321177
+       712344556667778776655444432177
+       123445566778899876655544444321
+       123455667788889987665554444432
+       122344556677888887766655544443
+       112233455667788877665554444432
+       112234455667777777766555444432
+       122334455667777777776655544443
+       123344455666777777776655544444
+       122344555667788887776655544444
+       112234556667888887776655444443
+       122334556678999997776655544443
+       122334555677888877776655544432
+       112223445566778877776655444432
+       112223344556667777766554444432
+       111222334455667777666555444432
+       112223345556777776666555444432
+       122334455667777766666555544443
+    `;
+
+    document.getElementById("rick-art").textContent = rickArt;
+  </script>
+</body>
+</html>
